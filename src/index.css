@@ -130,11 +130,10 @@ nav .nav-button:disabled{
 }
 
 
-
-
-
-
 /* ------ OnBoarding Page ------ */
+.onboarding{
+  border-top: solid 1px rgb(154, 154, 154);
+}
 .onboarding form{
   display: flex;
   justify-content: center;
@@ -201,4 +200,9 @@ nav .nav-button:disabled{
 
 .onboarding form input[type="submit"]:active{
   background-color: rgb(226, 115, 155);
+}
+
+
+.onboarding form .photo-container img{
+  width: 100%;
 }
