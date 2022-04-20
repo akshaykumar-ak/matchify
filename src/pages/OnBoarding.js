@@ -88,7 +88,7 @@ const OnBoarding = () => {
           name="gender_identity"  
           value="man"
           onChange={handleChange}
-          checked={false}/>
+          checked={formData.gender_identity==='man'}/>
           <label htmlFor="man-gender-identity">Man</label>
 
           <input id="woman-gender-identity" 
@@ -96,7 +96,7 @@ const OnBoarding = () => {
           name="gender_identity" 
           value="woman"
           onChange={handleChange}
-          checked={false}/>
+          checked={formData.gender_identity==='woman'}/>
           <label htmlFor="woman-gender-identity">Woman</label>
 
           <input id="more-gender-identity" 
@@ -104,7 +104,7 @@ const OnBoarding = () => {
           name="gender_identity" 
           value="more"
           onChange={handleChange}
-          checked={false}/>
+          checked={formData.gender_identity==='more'}/>
           <label htmlFor="more-gender-identity">More</label>
           </div>
 
@@ -113,7 +113,7 @@ const OnBoarding = () => {
           type="checkbox"
           name="show_gender" 
           onChange={handleChange}
-          checked={false}/>
+          checked={formData.show_gender}/>
 
 
           <label htmlFor="show-me">Show Me</label>
@@ -123,7 +123,7 @@ const OnBoarding = () => {
           name="gender_interest"
           value="man"
           onChange={handleChange}
-          checked={false}/>
+          checked={formData.gender_interest==='man'}/>
           <label htmlFor="man-gender-interest">Man</label>
 
           <input id="woman-gender-interest" 
@@ -131,7 +131,7 @@ const OnBoarding = () => {
           name="gender_interest" 
           value="woman"
           onChange={handleChange}
-          checked={false}/>
+          checked={formData.gender_interest==='woman'}/>
           <label htmlFor="woman-gender-interest">Woman</label>
 
           <input id="everyone-gender-interest" 
@@ -139,7 +139,7 @@ const OnBoarding = () => {
           name="gender_interest" 
           value="everyone"
           onChange={handleChange}
-          checked={false}/>
+          checked={formData.gender_interest==='everyone'}/>
           <label htmlFor="everyone-gender-interest">Everyone</label>
           </div>
 
@@ -149,7 +149,7 @@ const OnBoarding = () => {
           type="text"
           name="about"
           required={true}
-          placeholder="I like lonk walks..."
+          placeholder="I like long walks..."
           value={formData.about}
           onChange={handleChange}/>
           <input type="submit"/>
